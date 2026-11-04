@@ -6,13 +6,12 @@ Hands-on Linux system administration and networking lab built with **Ubuntu Serv
 
 | Component | Configuration |
 | --- | --- |
-| Host operating system | Windows 11 |
-| Virtualization | Oracle VirtualBox 7.2.22 |
-| Guest operating system | Ubuntu Server 26.04.1 LTS |
-| VM resources | 2 vCPUs, 4 GB assigned RAM, 30 GB virtual disk |
-| Networking | VirtualBox NAT |
-| Guest IPv4 | `10.0.2.15` (lab-local address) |
-| Remote administration | OpenSSH; Windows `127.0.0.1:2222` forwarded to guest port `22` |
+| Host OS | Windows 11 |
+| Virtualization | Oracle VirtualBox |
+| Guest OS | Ubuntu Server LTS |
+| Networking | NAT with localhost-only SSH port forwarding |
+| Remote administration | OpenSSH via Windows PowerShell |
+| Storage | LVM with ext4 filesystem |
 
 ## Completed work
 
@@ -58,4 +57,4 @@ sudo lvs
 
 ## Notes
 
-This project is a learning environment, not a production deployment. Configuration details, especially IP addresses and port mappings, are specific to this local VirtualBox lab. Planned topics are listed separately from tasks actually completed.
+This project is a learning environment, not a production deployment. Network configuration is described at a high level without publishing lab IP addresses or specific port mappings. Planned topics are listed separately from tasks actually completed.
